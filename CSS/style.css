@@ -31,7 +31,7 @@ h1{
 .trilho{
     width: 35px;
     height: 15px;
-    background-color: #4d4d4d;
+    background-color: #ffffff;
     border-radius: 15px;
     position: relative;
     cursor: pointer;
@@ -49,7 +49,7 @@ h1{
 }
 
 .trilho.dark{
-    background-color: #c3c3c3;
+    background-color: #f3e6cf;
 }
 
 .trilho.dark .indicador{
@@ -59,7 +59,7 @@ h1{
 }
 
 body.dark{
-    background-color: #e4e4e4;
+    background-color: #f3e6cf;
 }
 body.dark h1{
     color: #000;
