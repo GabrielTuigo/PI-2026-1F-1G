@@ -54,15 +54,15 @@ h1{
 
 .trilho.dark .indicador{
     left: 20px;
-    background-color: #fff;
-
+    background-color: #5b0000;
+s
 }
 
 body.dark{
     background-color: #f3e6cf;
 }
 body.dark h1{
-    color: #000;
+    color: #ffffff;
 }
 
 header {
