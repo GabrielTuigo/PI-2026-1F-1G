@@ -46,6 +46,8 @@ h1{
     position: absolute;
     left: 0;
     transition: .5s;
+    display: flex;
+    justify-content: center;
 }
 
 .trilho.dark{
