@@ -20,6 +20,7 @@ body{
     align-items: center;
     flex-direction: column;
     background-color: #5b0000;
+    font-family: Arial, Helvetica, sans-serif;
     transition: .5s;
 }
 
@@ -64,57 +65,43 @@ body.dark h1{
     color: #000;
 }
 
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #5c1414;
-    color: #fff;
-  }
-
-  header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #140a08;
     padding: 12px 30px;
-  }
-
-  header .logo {
+}
+header .logo {
     font-weight: bold;
     letter-spacing: 2px;
     font-size: 14px;
-  }
-
-  header nav a {
+}
+header nav a {
     color: #ccc;
     text-decoration: none;
     margin: 0 12px;
     font-size: 13px;
-  }
-
-  #inicio {
+}
+#inicio {
     background: linear-gradient(180deg, #140a08 0%, #3a0d0d 100%);
     padding: 60px 40px;
-  }
-
-  #inicio h1 {
+}
+#inicio h1 {
     font-size: 48px;
     text-transform: uppercase;
     line-height: 1.1;
     margin: 0;
-  }
-
-  #inicio h1 span {
+}
+#inicio h1 span {
     color: #e0402c;
-  }
-
-  #inicio p {
+}
+#inicio p {
     max-width: 400px;
     color: #cbb9a8;
     margin: 20px 0 30px;
-  }
-
-  .navbar {
+}
+.navbar {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -123,31 +110,27 @@ body.dark h1{
     margin: 30px auto;
     padding: 10px 20px;
     border-radius: 30px;
-  }
-
-  .navbar a {
+}
+.navbar a {
     color: #2b1c12;
     text-decoration: none;
     font-size: 13px;
     padding: 6px 10px;
-  }
-    .card {
+}
+.card {
     background-color: #f3e6cf;
     color: #2b1c12;
     max-width: 600px;
     margin: 30px auto;
     padding: 30px 40px;
     border-radius: 10px;
-  }
-
-  .card h3 {
+}
+.card h3 {
     text-align: center;
     margin-top: 0;
-  }
-
-  .card p {
+}
+.card p {
     text-align: justify;
     font-size: 14px;
     color: #5a4634;
-  }
-
+}
