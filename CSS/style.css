@@ -35,6 +35,8 @@ h1{
     border-radius: 15px;
     position: relative;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 .trilho .indicador{
