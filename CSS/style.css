@@ -43,11 +43,10 @@ h1{
     background-color: #5b0000;
     border-radius: 50%;
     transform: scale(.9);
-    position: absolute;
     left: 0;
     transition: .5s;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .trilho.dark{
