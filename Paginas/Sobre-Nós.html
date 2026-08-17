@@ -1,154 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <title>GRUPO 1 - Sobre Nós</title>
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #5c1414;
-    color: #fff;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #140a08;
-    padding: 12px 30px;
-  }
-
-  header .logo {
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 14px;
-  }
-
-  header nav a {
-    color: #ccc;
-    text-decoration: none;
-    margin: 0 12px;
-    font-size: 13px;
-  }
-
-  header button {
-    background-color: #c0392b;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    background-color: #f3e6cf;
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 10px 20px;
-    border-radius: 30px;
-  }
-
-  .navbar a {
-    color: #2b1c12;
-    text-decoration: none;
-    font-size: 13px;
-    padding: 6px 10px;
-  }
-
-  .card {
-    background-color: #f3e6cf;
-    color: #2b1c12;
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 30px 40px;
-    border-radius: 10px;
-  }
-
-  .card h3 {
-    text-align: center;
-    margin-top: 0;
-  }
-
-  .team {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .team div {
-    background-color: #fff;
-    width: 150px;
-    padding: 15px;
-    text-align: center;
-    border-radius: 6px;
-  }
-
-  .team img {
-    display: block;
-    width: 100%;
-    height: 130px;
-    background-color: #ddd;
-    border: 1px dashed #999;
-    margin-bottom: 10px;
-  }
-
-  .team p {
-    font-size: 12px;
-    color: #5a4634;
-  }
-
-  #contato-box {
-    background-color: #fff;
-    border-radius: 6px;
-    padding: 20px;
-    text-align: center;
-  }
-
-  #contato-box p {
-    color: #5a4634;
-    font-size: 14px;
-  }
-
-  footer {
-    background-color: #f3e6cf;
-    color: #2b1c12;
-    padding: 30px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 40px;
-  }
-
-  footer h4 {
-    margin-bottom: 10px;
-  }
-
-  footer a {
-    display: block;
-    color: #5a4634;
-    text-decoration: none;
-    font-size: 13px;
-    margin-bottom: 6px;
-  }
-</style>
+<link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
 
   <header>
-    
+
   </header>
 
   <div class="navbar">
-    <a href="Inicial.html">Início</a>
-    <a href="Conteudo-Doping.html">Conteúdo Doping</a>
-    <a href="Conteudo-Lesão.html">Conteúdo Lesão</a>
-    <a href="Sobre-Nós.html">Sobre Nós</a>
-    <a href="#" class="dark-mode">🌒</a>
+    <a href="inicio.html">Início</a>
+    <a href="conteudo-dopping.html">Conteúdo Dopping</a>
+    <a href="conteudo-lesao.html">Conteúdo Lesão</a>
+    <a href="sobre-nos.html">Sobre Nós</a>
+    <a href="#" onclick="alternarTema()">🌙</a>
   </div>
 
   <div class="card">
@@ -156,27 +24,27 @@
     <div class="team">
       <div>
         <img src="" alt="imagem do 1º integrante">
-        <p>Biografia sobre o 1º integrante</p>
+        <p>Uma pequena biografia sobre o 1º integrante</p>
       </div>
       <div>
         <img src="" alt="imagem do 2º integrante">
-        <p>Biografia sobre o 2º integrante</p>
+        <p>Uma pequena biografia sobre o 2º integrante</p>
       </div>
       <div>
         <img src="" alt="imagem do 3º integrante">
-        <p>Biografia sobre o 3º integrante</p>
+        <p>Uma pequena biografia sobre o 3º integrante</p>
       </div>
       <div>
         <img src="" alt="imagem do 4º integrante">
-        <p>Biografia sobre o 4º integrante</p>
+        <p>Uma pequena biografia sobre o 4º integrante</p>
       </div>
       <div>
         <img src="" alt="imagem do 5º integrante">
-        <p>Biografia sobre o 5º integrante</p>
+        <p>Uma pequena biografia sobre o 5º integrante</p>
       </div>
       <div>
         <img src="" alt="imagem do 6º integrante">
-        <p>Biografia sobre o 6º integrante</p>
+        <p>Uma pequena biografia sobre o 6º integrante</p>
       </div>
     </div>
   </div>
@@ -200,9 +68,9 @@
     <div>
       <h4>Explorar</h4>
       <a href="inicio.html">Início</a>
-      <a href="conteudo-dopping.html">Conteúdo</a>
+      <a href="conteudo-dopping.html">Conteúdo Dopping</a>
+      <a href="conteudo-lesao.html">Conteúdo Lesão</a>
       <a href="sobre-nos.html">Sobre Nós</a>
-      <a href="#contato">Contato</a>
     </div>
     <div>
       <h4>Empresa</h4>
@@ -211,6 +79,8 @@
       <a href="#">Contrate-nos</a>
     </div>
   </footer>
+
+  <script src="../JS/script.js"></script>
 
 </body>
 </html>
