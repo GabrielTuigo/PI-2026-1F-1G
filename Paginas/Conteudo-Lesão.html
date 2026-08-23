@@ -3,48 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <title>GRUPO 1 - Lesões</title>
-<link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <div class="logo">GRUPO 1</div>
-    <nav>
-      <a href="inicio.html">Início</a>
-      <a href="conteudo-dopping.html">Conteúdo Dopping</a>
-      <a href="conteudo-lesao.html">Conteúdo Lesão</a>
-      <a href="sobre-nos.html">Sobre Nós</a>
-    </nav>
-    <button>Entrar</button>
-  </header>
 
-  <div class="navbar">
+  <nav class="barra-navegacao">
     <a href="inicio.html">Início</a>
-    <a href="conteudo-dopping.html">Conteúdo Dopping</a>
-    <a href="conteudo-lesao.html">Conteúdo Lesão</a>
+    <a href="conteudo-Doping.html" class="ativo">Conteúdo Doping</a>
+    <a href="conteudo-lesao.html" class="ativo">Conteúdo Lesões</a>
     <a href="sobre-nos.html">Sobre Nós</a>
-    <a href="#" onclick="alternarTema()">🌙</a>
-  </div>
+    <button id="botao-tema" class="botao-tema" onclick="alternarTema()">🌙</button>
+  </nav>
 
-  <main>
+  <main class="conteudo">
 
-    <div class="card">
+    <section class="cartao lesoes">
       <h3>Lesões</h3>
       <p>Texto aqui.</p>
-    </div>
+    </section>
 
-    <div class="card">
-      <img class="img-grande" src="" alt="imagem">
-    </div>
+    <section class="cartao imagem-lesao">
+      <div class="imagem-espaco grande"></div>
+    </section>
 
-    <div class="card">
+    <section class="cartao lesoes-tratamento">
       <h3>Lesões</h3>
       <p>Texto aqui.</p>
-    </div>
+    </section>
 
   </main>
 
-  <script src="../JS/script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
