@@ -3,76 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <title>GRUPO 1 - Sobre Nós</title>
-<link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
 
-  </header>
 
-  <div class="navbar">
+  <nav class="barra-navegacao">
     <a href="inicio.html">Início</a>
-    <a href="conteudo-dopping.html">Conteúdo Dopping</a>
-    <a href="conteudo-lesao.html">Conteúdo Lesão</a>
-    <a href="sobre-nos.html">Sobre Nós</a>
-    <a href="#" onclick="alternarTema()">🌙</a>
-  </div>
+    <a href="conteudo-dopping.html">Conteúdo Doping</a>
+    <a href="conteudo-lesao.html">Conteúdo Lesões</a>
+    <a href="sobre-nos.html" class="ativo">Sobre Nós</a>
+    <button id="botao-tema" class="botao-tema" onclick="alternarTema()">🌙</button>
+  </nav>
 
-  <div class="card">
-    <h3>Sobre Nós</h3>
-    <div class="team">
-      <div>
-        <img src="" alt="imagem do 1º integrante">
-        <p>Uma pequena biografia sobre o 1º integrante</p>
-      </div>
-      <div>
-        <img src="" alt="imagem do 2º integrante">
-        <p>Uma pequena biografia sobre o 2º integrante</p>
-      </div>
-      <div>
-        <img src="" alt="imagem do 3º integrante">
-        <p>Uma pequena biografia sobre o 3º integrante</p>
-      </div>
-      <div>
-        <img src="" alt="imagem do 4º integrante">
-        <p>Uma pequena biografia sobre o 4º integrante</p>
-      </div>
-      <div>
-        <img src="" alt="imagem do 5º integrante">
-        <p>Uma pequena biografia sobre o 5º integrante</p>
-      </div>
-      <div>
-        <img src="" alt="imagem do 6º integrante">
-        <p>Uma pequena biografia sobre o 6º integrante</p>
-      </div>
-    </div>
-  </div>
+  <main class="conteudo">
 
-  <div class="card" id="contato">
-    <h3>Contato</h3>
-    <div id="contato-box">
-      <h4>INFORMAÇÕES SOBRE CONTATO</h4>
-      <p>Gmail</p>
-      <p>Gmail segundo</p>
-      <p>Instagram</p>
-    </div>
-  </div>
+    <section class="cartao equipe-secao">
+      <h3>Sobre Nós</h3>
+      <div class="equipe">
+        <div class="integrante">
+          <div class="imagem-espaco"></div>
+          <p>Uma pequena biografia sobre o 1º integrante</p>
+        </div>
+        <div class="integrante">
+          <div class="imagem-espaco"></div>
+          <p>Uma pequena biografia sobre o 2º integrante</p>
+        </div>
+        <div class="integrante">
+          <div class="imagem-espaco"></div>
+          <p>Uma pequena biografia sobre o 3º integrante</p>
+        </div>
+        <div class="integrante">
+          <div class="imagem-espaco"></div>
+          <p>Uma pequena biografia sobre o 4º integrante</p>
+        </div>
+        <div class="integrante">
+          <div class="imagem-espaco"></div>
+          <p>Uma pequena biografia sobre o 5º integrante</p>
+        </div>
+        <div class="integrante">
+          <div class="imagem-espaco"></div>
+          <p>Uma pequena biografia sobre o 6º integrante</p>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <div>
+    <section class="cartao contato-secao" id="contato">
+      <h3>Contato</h3>
+      <div class="contato-caixa">
+        <h4>INFORMAÇÕES SOBRE CONTATO</h4>
+        <p>Gmail</p>
+        <p>Gmail segundo</p>
+        <p>Instagram</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-coluna">
       <h4>Contate-se</h4>
       <a href="#">Instagram</a>
       <a href="#">Gmail</a>
     </div>
-    <div>
+    <div class="rodape-coluna">
       <h4>Explorar</h4>
       <a href="inicio.html">Início</a>
-      <a href="conteudo-dopping.html">Conteúdo Dopping</a>
-      <a href="conteudo-lesao.html">Conteúdo Lesão</a>
+      <a href="conteudo-dopping.html">Conteúdo Doping</a>
+      <a href="conteudo-lesao.html">Conteúdo Lesões</a>
       <a href="sobre-nos.html">Sobre Nós</a>
     </div>
-    <div>
+    <div class="rodape-coluna">
       <h4>Empresa</h4>
       <a href="#">Blog</a>
       <a href="#">Suporte</a>
@@ -80,7 +82,7 @@
     </div>
   </footer>
 
-  <script src="../JS/script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
