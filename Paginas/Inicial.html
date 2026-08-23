@@ -3,28 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <title>GRUPO 1 - Início</title>
-<link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
 
-  </header>
-
-  <section id="inicio">
-    <h1>PROTEJA<br>O <span>ATLETA.</span><br>PRESERVE<br>O ESPORTE.</h1>
+  <section class="banner-inicial" id="inicio">
+    <h1>PROTEJA<br>O <span class="destaque">ATLETA.</span><br>PRESERVE<br>O ESPORTE.</h1>
     <p>Combate ao doping e prevenção de lesões esportivas: informação técnica, protocolos clínicos e acompanhamento especializado para atletas de todas as modalidades.</p>
+    <div class="botoes-banner">
+      <a class="botao-primario" href="conteudo-dopping.html">Entrar</a>
+      <a class="botao-secundario" href="conteudo-dopping.html">Saiba mais</a>
+    </div>
   </section>
 
-  <div class="navbar">
-    <a href="inicio.html">Início</a>
-    <a href="conteudo-dopping.html">Conteúdo Dopping</a>
-    <a href="conteudo-lesao.html">Conteúdo Lesão</a>
+  <nav class="barra-navegacao">
+    <a href="inicio.html" class="ativo">Início</a>
+    <a href="conteudo-dopping.html">Conteúdo Doping</a>
+    <a href="conteudo-lesao.html">Conteúdo Lesões</a>
     <a href="sobre-nos.html">Sobre Nós</a>
-    <a href="#" onclick="alternarTema()">🌙</a>
-  </div>
+    <button id="botao-tema" class="botao-tema" onclick="alternarTema()">🌙</button>
+  </nav>
 
-  <script src="../JS/script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
