@@ -3,43 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <title>GRUPO 1 - Dopping</title>
-<link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
 
-  </header>
 
-  <div class="navbar">
+  <nav class="barra-navegacao">
     <a href="inicio.html">Início</a>
-    <a href="conteudo-dopping.html">Conteúdo Dopping</a>
-    <a href="conteudo-lesao.html">Conteúdo Lesão</a>
+    <a href="conteudo-dopping.html" class="ativo">Conteúdo Doping</a>
+    <a href="conteudo-lesao.html">Conteúdo Lesões</a>
     <a href="sobre-nos.html">Sobre Nós</a>
-    <a href="#" onclick="alternarTema()">🌙</a>
-  </div>
+    <button id="botao-tema" class="botao-tema" onclick="alternarTema()">🌙</button>
+  </nav>
 
-  <main>
+  <main class="conteudo">
 
-    <div class="card">
+    <section class="cartao introducao">
+      <h3>Introdução sobre o trabalho</h3>
+      <p>Texto aqui.</p>
+    </section>
+
+    <section class="cartao voce-sabia">
+      <h3>Você Sabia?</h3>
+      <ul class="lista-fatos">
+        <li>Texto aqui.</li>
+        <li>Texto aqui.</li>
+        <li>Texto aqui.</li>
+        <li>Texto aqui.</li>
+      </ul>
+    </section>
+
+    <section class="cartao dopagem">
       <h3>Dopping</h3>
       <p>Texto aqui.</p>
-    </div>
+    </section>
 
-    <div class="card">
+    <section class="cartao primeiro-caso">
       <h3>Primeiro caso de Doping registrado</h3>
       <p>Texto aqui.</p>
-    </div>
+    </section>
 
-    <div class="card">
-      <img src="" alt="imagem">
+    <section class="cartao biografia">
+      <div class="imagem-espaco"></div>
       <h3>Biografia de Nome</h3>
       <p>Texto aqui.</p>
-    </div>
+    </section>
 
   </main>
 
-  <script src="../JS/script.js"></script>
+  <script src="script.js"></script>
 
 </body>
-</html>
+</html> 
