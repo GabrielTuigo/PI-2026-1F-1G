@@ -1,13 +1,3 @@
-/* ============================================================
-   CORPO, ESPORTE & DOPAGEM — folha de estilos
-   Conceito: ficha técnica de exame esportivo. A paleta e os
-   marcadores em mira remetem a uma avaliação física — a régua,
-   os cantos de enquadramento e os "cartões" de gravidade (como
-   os usados por árbitros) vêm do universo do esporte.
-   ============================================================ */
-
-/* ---------- 1. Fundamentos: cor, tipo, reset ---------- */
-
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root {
@@ -111,8 +101,6 @@ h1, h2, h3 { font-family: "Big Shoulders Display", sans-serif; margin: 0; }
 .moldura-mira::before { top: -1px; left: -1px; border-top: 2px solid var(--marca); border-left: 2px solid var(--marca); }
 .moldura-mira::after { bottom: -1px; right: -1px; border-bottom: 2px solid var(--marca); border-right: 2px solid var(--marca); }
 
-/* ---------- 2. Cabeçalho ---------- */
-
 .cabecalho {
   position: sticky;
   top: 0;
@@ -184,8 +172,6 @@ h1, h2, h3 { font-family: "Big Shoulders Display", sans-serif; margin: 0; }
 .botao-pequeno { padding: 9px 15px; font-size: 13.5px; }
 .icone-seta { width: 15px; height: 15px; }
 
-/* ---------- 3. Herói ---------- */
-
 .hero { padding: 54px 0 0; border-bottom: 2px solid var(--tinta); }
 .hero-legenda { margin: 0 0 14px; font-size: 14.5px; color: var(--texto-suave); }
 .hero-titulo {
@@ -211,8 +197,6 @@ h1, h2, h3 { font-family: "Big Shoulders Display", sans-serif; margin: 0; }
 .hero-estatistica-numero { display: block; font-family: "Big Shoulders Display", sans-serif; font-size: 34px; font-weight: 700; color: var(--marca); line-height: 1; margin-bottom: 10px; }
 .hero-estatistica-texto { margin: 0; font-size: 14px; line-height: 1.55; color: var(--texto-suave); }
 
-/* ---------- 4. Cabeçalhos de seção ---------- */
-
 .rotulo-secao { display: flex; align-items: baseline; gap: 10px; margin: 0 0 14px; }
 .rotulo-secao-numero { font-family: "Big Shoulders Display", sans-serif; font-size: 15px; font-weight: 700; color: var(--marca); }
 .rotulo-secao-texto { font-size: 14.5px; color: var(--texto-suave); }
@@ -229,8 +213,6 @@ h1, h2, h3 { font-family: "Big Shoulders Display", sans-serif; margin: 0; }
 
 .duas-colunas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; }
 
-/* ---------- 5. Conceito (critérios) ---------- */
-
 .texto-corpo { font-size: 16px; line-height: 1.68; color: var(--texto); margin: 0 0 16px; }
 .texto-corpo:last-child { margin-bottom: 0; }
 .texto-corpo--estreito { max-width: 44ch; margin-bottom: 22px; }
@@ -242,7 +224,6 @@ h1, h2, h3 { font-family: "Big Shoulders Display", sans-serif; margin: 0; }
 .criterio-titulo { margin: 0 0 5px; font-weight: 600; font-size: 15.5px; color: var(--tinta); }
 .criterio-texto { margin: 0; font-size: 14.5px; line-height: 1.55; color: var(--texto-suave); }
 
-/* ---------- 6. Substâncias ---------- */
 
 .grade-substancias { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1px; background: var(--linha-forte); border: 1px solid var(--linha-forte); }
 .ficha {
@@ -260,7 +241,6 @@ h1, h2, h3 { font-family: "Big Shoulders Display", sans-serif; margin: 0; }
 .ficha-regioes { padding: 13px 22px 18px; display: flex; flex-wrap: wrap; gap: 6px; }
 .etiqueta-regiao { font-size: 12px; color: var(--texto-suave); border: 1px solid var(--linha-forte); border-radius: 999px; padding: 3px 10px; }
 
-/* ---------- 7. Mecanismo (pista) ---------- */
 
 .pista { margin-top: 10px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); border-top: 2px solid var(--painel-linha); }
 .raia { padding: 26px 22px 0; border-left: 1px solid var(--painel-linha); position: relative; }
@@ -270,7 +250,6 @@ h1, h2, h3 { font-family: "Big Shoulders Display", sans-serif; margin: 0; }
 .raia-titulo { font-size: 19px; font-weight: 700; color: #fff; margin: 0 0 10px; }
 .raia-texto { font-size: 14.5px; line-height: 1.6; color: var(--painel-texto-suave); margin: 0 0 26px; }
 
-/* ---------- 8. Chamada do mapa ---------- */
 
 .chamada-mapa {
   border: 2px solid var(--tinta);
@@ -290,7 +269,6 @@ h1, h2, h3 { font-family: "Big Shoulders Display", sans-serif; margin: 0; }
 .previa-figura img { width: 100%; height: auto; display: block; }
 .previa-legenda { margin: 16px 0 0; text-align: center; font-size: 12.5px; font-weight: 600; color: var(--texto-suave); }
 
-/* ---------- 9. Prevenção ---------- */
 
 .lista-medidas { display: grid; gap: 13px; }
 .medida { display: flex; gap: 13px; align-items: flex-start; }
@@ -311,8 +289,6 @@ h1, h2, h3 { font-family: "Big Shoulders Display", sans-serif; margin: 0; }
 .lista-alerta li { font-size: 14.5px; line-height: 1.55; color: var(--painel-texto-suave); border-bottom: 1px solid var(--painel-linha); padding-bottom: 11px; }
 .lista-alerta li:last-child { border-bottom: none; padding-bottom: 0; }
 
-/* ---------- 10. Rodapé ---------- */
-
 .rodape { padding: 46px 0 54px; }
 .rodape-grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; border-top: 2px solid var(--tinta); padding-top: 34px; }
 .rodape-marca { font-family: "Big Shoulders Display", sans-serif; font-weight: 700; font-size: 17px; margin: 0 0 10px; }
@@ -321,10 +297,6 @@ h1, h2, h3 { font-family: "Big Shoulders Display", sans-serif; margin: 0; }
 .rodape-links { display: grid; gap: 7px; font-size: 13.5px; }
 .rodape-refs { margin: 0; font-size: 13px; line-height: 1.7; color: var(--texto-suave); }
 .rodape-aviso { margin: 30px 0 0; padding-top: 20px; border-top: 1px solid var(--linha-forte); font-size: 12.5px; line-height: 1.6; color: var(--texto-fraco); max-width: 92ch; }
-
-/* ============================================================
-   Página: mapa corporal interativo
-   ============================================================ */
 
 .cabecalho-pagina { padding: 40px 0 4px; }
 .titulo-pagina { font-size: 42px; font-weight: 700; line-height: 1.05; color: var(--tinta); margin: 0 0 14px; max-width: 16ch; }
@@ -411,7 +383,6 @@ h1, h2, h3 { font-family: "Big Shoulders Display", sans-serif; margin: 0; }
 .rodape-simples { padding: 0 0 54px; }
 .aviso-simples { margin: 0; padding-top: 20px; border-top: 1px solid var(--linha-forte); font-size: 12.5px; line-height: 1.6; color: var(--texto-fraco); max-width: 92ch; }
 
-/* ---------- 11. Responsivo ---------- */
 
 @media (max-width: 760px) {
   .hero-titulo { font-size: 40px; }
