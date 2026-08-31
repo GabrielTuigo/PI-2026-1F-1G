@@ -77,7 +77,7 @@ var regioes = [
     gravidade: "media",
     pontos: [{ top: 64, left: 50 }],
     lesoes: [
-      "Tendinite do psoas",
+      "Tendinite do pessoas",
       "Bursite trocantérica",
       "Impacto femoroacetabular"
     ],
