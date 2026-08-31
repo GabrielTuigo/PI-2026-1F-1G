@@ -7,261 +7,270 @@
 <meta name="description" content="Material educativo sobre dopagem, mecanismo de lesão esportiva e mapa corporal interativo das lesões mais frequentes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 
-<nav class="site-nav">
-  <div class="wrap nav-bar">
-    <span class="brand">Corpo, Esporte &amp; Dopagem</span>
-    <div class="nav-links">
-      <a href="#dopagem" class="nav-link">O que é dopagem</a>
-      <a href="#substancias" class="nav-link">Substâncias</a>
-      <a href="#mecanismo" class="nav-link">Como a lesão acontece</a>
-      <a href="#mapa" class="nav-link">Mapa corporal</a>
-      <a href="Páginas/MapaCorporal.html" class="btn btn-primary btn-pill">Abrir o boneco interativo</a>
-    </div>
-  </div>
-</nav>
-
-<header class="wrap hero">
-  <div class="hero-grid">
-    <div>
-      <div class="hero-kicker">
-        <span class="hero-kicker-bar"></span>
-        <span class="hero-kicker-text">Educação Física · Ensino Médio</span>
-      </div>
-      <h1 class="hero-title">A força que o corpo não pediu</h1>
-      <p class="hero-lead">Dopagem não é apenas trapaça: é um desequilíbrio imposto ao corpo. Músculos ganham força em semanas, tendões precisam de meses, o coração trabalha além do projeto e a dor deixa de avisar. Este material percorre esse mecanismo e mostra, região por região, onde a lesão aparece.</p>
-      <div class="hero-actions">
-        <a href="Páginas/MapaCorporal.html" class="btn btn-primary btn-lg">Explorar o mapa corporal
-          <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-arrow"><path d="M5 12h13M13 6l6 6-6 6" class="icon-stroke"></path></svg>
-        </a>
-        <a href="#dopagem" class="btn btn-outline btn-lg">Começar pela teoria</a>
-      </div>
-    </div>
-
-    <div class="hero-panel">  
-      <p class="hero-panel-kicker">Três ideias para levar da aula</p>
-      <div class="hero-panel-list">
-        <div class="hero-panel-item">
-          <span class="hero-panel-num">01</span>
-          <p class="hero-panel-text">O tecido conjuntivo se adapta mais devagar que o músculo. Toda aceleração artificial de força cobra esse atraso.</p>
-        </div>
-        <div class="hero-panel-divider"></div>
-        <div class="hero-panel-item">
-          <span class="hero-panel-num">02</span>
-          <p class="hero-panel-text">Dor e fadiga são informação. Substâncias que as silenciam não curam nada, apenas removem o alarme.</p>
-        </div>
-        <div class="hero-panel-divider"></div>
-        <div class="hero-panel-item">
-          <span class="hero-panel-num">03</span>
-          <p class="hero-panel-text">Os efeitos mais graves não estão nos músculos visíveis, e sim no coração, no fígado e nos ossos.</p>
-        </div>
-      </div>
-    </div>
+<header class="cabecalho">
+  <div class="faixa cabecalho-barra">
+    <a href="#inicio" class="marca"><span class="marca-mira"></span>Corpo, Esporte &amp; Dopagem</a>
+    <nav class="menu">
+      <a href="#dopagem" class="menu-link">O que é dopagem</a>
+      <a href="#substancias" class="menu-link">Substâncias</a>
+      <a href="#mecanismo" class="menu-link">Como a lesão acontece</a>
+      <a href="#mapa" class="menu-link">Mapa corporal</a>
+      <a href="paginas/mapa-corporal.html" class="botao botao-cheio botao-pequeno">Abrir o boneco interativo</a>
+    </nav>
   </div>
 </header>
 
-<section id="dopagem" class="section-alt">
-  <div class="wrap section-pad">
-    <div class="two-col">
-      <div>
-        <p class="kicker">01 · Conceito</p>
-        <h2 class="section-title">O que é dopagem</h2>
-        <p class="body-text">Dopagem é o uso de substâncias ou métodos proibidos com a finalidade de aumentar artificialmente o desempenho esportivo. A lista de proibições é revisada anualmente pela Agência Mundial Antidopagem (WADA) e vale para competição e, em vários casos, também fora dela.</p>
-        <p class="body-text">Uma substância entra na lista quando atende a pelo menos dois dos três critérios ao lado. Isso explica por que produtos legais e vendidos em farmácia podem ser proibidos no esporte.</p>
+<section id="inicio" class="hero">
+  <div class="faixa">
+    <p class="hero-legenda">Material de Educação Física para o Ensino Médio</p>
+    <h1 class="hero-titulo">A força que o corpo não pediu</h1>
+    <div class="hero-corpo">
+      <p class="hero-texto">Dopagem não é apenas trapaça: é um desequilíbrio imposto ao corpo. Músculos ganham força em semanas, tendões precisam de meses, o coração trabalha além do projeto e a dor deixa de avisar. Este material percorre esse mecanismo e mostra, região por região, onde a lesão aparece.</p>
+      <div class="hero-acoes">
+        <a href="paginas/mapa-corporal.html" class="botao botao-cheio">Explorar o mapa corporal
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="icone-seta"><path d="M5 12h13M13 6l6 6-6 6" class="icone-traco"></path></svg>
+        </a>
+        <a href="#dopagem" class="botao botao-vazado">Começar pela teoria</a>
       </div>
-      <div class="stack-cards">
-        <div class="info-card">
-          <p class="info-card-title">Potencial de melhorar o desempenho</p>
-          <p class="info-card-text">Há evidência de que a substância ou o método aumenta a capacidade física além do treino.</p>
-        </div>
-        <div class="info-card">
-          <p class="info-card-title">Risco à saúde do atleta</p>
-          <p class="info-card-text">O uso representa perigo real, imediato ou a longo prazo, para quem consome.</p>
-        </div>
-        <div class="info-card">
-          <p class="info-card-title">Contraria o espírito esportivo</p>
-          <p class="info-card-text">Viola valores de ética, jogo limpo, respeito às regras e igualdade de condições.</p>
-        </div>
+    </div>
+  </div>
+  <div class="faixa">
+    <div class="hero-estatisticas">
+      <div class="hero-estatistica">
+        <span class="hero-estatistica-numero">1</span>
+        <p class="hero-estatistica-texto">O tecido conjuntivo se adapta mais devagar que o músculo. Toda aceleração artificial de força cobra esse atraso.</p>
+      </div>
+      <div class="hero-estatistica">
+        <span class="hero-estatistica-numero">2</span>
+        <p class="hero-estatistica-texto">Dor e fadiga são informação. Substâncias que as silenciam não curam nada, apenas removem o alarme.</p>
+      </div>
+      <div class="hero-estatistica">
+        <span class="hero-estatistica-numero">3</span>
+        <p class="hero-estatistica-texto">Os efeitos mais graves não estão nos músculos visíveis, e sim no coração, no fígado e nos ossos.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="substancias" class="wrap section-pad">
-  <p class="kicker">02 · Classes de substâncias</p>
-  <h2 class="section-title">O que se busca e o que o corpo recebe</h2>
-  <p class="lede">Cada classe de substância promete um ganho específico. O preço aparece em tecidos diferentes daqueles que o atleta pretendia melhorar.</p>
-
-  <div class="card-grid">
-
-    <article class="card">
-      <h3 class="card-title">Esteroides anabolizantes androgênicos</h3>
-      <div>
-        <p class="card-label">Efeito buscado</p>
-        <p class="card-text">Aumento acelerado de massa muscular, força e recuperação entre treinos.</p>
-      </div>
-      <div class="card-divider"></div>
-      <div>
-        <p class="card-label card-label--danger">Risco documentado</p>
-        <p class="card-text">Tendões e ligamentos não acompanham o ganho de força e rompem. Somam-se hipertrofia do ventrículo esquerdo, hipertensão, alterações hepáticas, acne, alterações de humor e, em adolescentes, fechamento precoce das cartilagens de crescimento.</p>
-      </div>
-      <p class="card-footnote">Regiões mais afetadas: ombros, joelhos, tornozelos, tórax, fígado</p>
-    </article>
-
-    <article class="card">
-      <h3 class="card-title">EPO e manipulação sanguínea</h3>
-      <div>
-        <p class="card-label">Efeito buscado</p>
-        <p class="card-text">Mais glóbulos vermelhos, mais oxigênio para o músculo, maior resistência aeróbia.</p>
-      </div>
-      <div class="card-divider"></div>
-      <div>
-        <p class="card-label card-label--danger">Risco documentado</p>
-        <p class="card-text">O sangue fica mais viscoso e o coração trabalha contra maior resistência, com risco de trombose, embolia pulmonar, infarto e AVC, sobretudo na desidratação de provas longas.</p>
-      </div>
-      <p class="card-footnote">Regiões mais afetadas: coração, pulmões, circulação</p>
-    </article>
-
-    <article class="card">
-      <h3 class="card-title">Estimulantes</h3>
-      <div>
-        <p class="card-label">Efeito buscado</p>
-        <p class="card-text">Redução da percepção de fadiga, mais atenção, agressividade e velocidade de reação.</p>
-      </div>
-      <div class="card-divider"></div>
-      <div>
-        <p class="card-label card-label--danger">Risco documentado</p>
-        <p class="card-text">Taquicardia, arritmias, hipertensão, hipertermia e maior exposição a traumas por comportamento de risco. Casos de morte súbita em esforço estão descritos com anfetaminas e cocaína.</p>
-      </div>
-      <p class="card-footnote">Regiões mais afetadas: coração, cabeça, sistema nervoso</p>
-    </article>
-
-    <article class="card">
-      <h3 class="card-title">Hormônio do crescimento e fatores de crescimento</h3>
-      <div>
-        <p class="card-label">Efeito buscado</p>
-        <p class="card-text">Ganho de massa magra, redução de gordura e promessa de cicatrização mais rápida.</p>
-      </div>
-      <div class="card-divider"></div>
-      <div>
-        <p class="card-label card-label--danger">Risco documentado</p>
-        <p class="card-text">Crescimento desproporcional de ossos e cartilagens (acromegalia), síndrome do túnel do carpo, dores articulares, resistência à insulina e aumento do coração.</p>
-      </div>
-      <p class="card-footnote">Regiões mais afetadas: punhos, mãos, articulações, coração</p>
-    </article>
-
-    <article class="card">
-      <h3 class="card-title">Diuréticos e agentes de mascaramento</h3>
-      <div>
-        <p class="card-label">Efeito buscado</p>
-        <p class="card-text">Perda rápida de peso para categorias e diluição da urina para escapar do exame.</p>
-      </div>
-      <div class="card-divider"></div>
-      <div>
-        <p class="card-label card-label--danger">Risco documentado</p>
-        <p class="card-text">Desidratação, queda de pressão, câimbras, perda de potássio e sódio, arritmias e insuficiência renal. A desidratação também reduz a proteção articular e muscular.</p>
-      </div>
-      <p class="card-footnote">Regiões mais afetadas: rins, músculos, coração</p>
-    </article>
-
-    <article class="card">
-      <h3 class="card-title">Corticosteroides e analgésicos usados por conta própria</h3>
-      <div>
-        <p class="card-label">Efeito buscado</p>
-        <p class="card-text">Continuar treinando e competindo apesar da dor e da inflamação.</p>
-      </div>
-      <div class="card-divider"></div>
-      <div>
-        <p class="card-label card-label--danger">Risco documentado</p>
-        <p class="card-text">Enfraquecem o colágeno do tendão, retardam a cicatrização, reduzem a densidade óssea e apagam o sinal de alerta que impediria a lesão de progredir.</p>
-      </div>
-      <p class="card-footnote">Regiões mais afetadas: tendões, coluna, quadril, joelhos</p>
-    </article>
-
-  </div>
-</section>
-
-<section id="mecanismo" class="section-invert">
-  <div class="wrap section-pad-lg">
-    <p class="kicker kicker-panel">03 · Mecanismo</p>
-    <h2 class="section-title section-title--invert">Como a lesão se instala</h2>
-    <p class="lede lede--invert">A sequência abaixo é a mesma em quase todos os casos, mude apenas a articulação envolvida.</p>
-
-    <div class="steps-grid">
-      <div class="step">
-        <p class="step-label">ETAPA 1</p>
-        <p class="step-title">Ganho desigual</p>
-        <p class="step-text">O músculo hipertrofia rápido. Tendão, ligamento e cartilagem, com pouca vascularização, seguem em outro ritmo.</p>
-      </div>
-      <div class="step">
-        <p class="step-label">ETAPA 2</p>
-        <p class="step-title">Carga acima do limite</p>
-        <p class="step-text">Treinos mais pesados e mais frequentes produzem microlesões que não têm tempo de cicatrizar.</p>
-      </div>
-      <div class="step">
-        <p class="step-label">ETAPA 3</p>
-        <p class="step-title">Alarme desligado</p>
-        <p class="step-text">Analgésicos, anti-inflamatórios e estimulantes apagam a dor e a fadiga que interromperiam o treino.</p>
-      </div>
-      <div class="step step--final">
-        <p class="step-label step-label--final">ETAPA 4</p>
-        <p class="step-title">Falha aguda</p>
-        <p class="step-text">Um gesto comum rompe o tendão, o ligamento ou o osso já comprometido. A lesão parece súbita, mas vinha sendo construída.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="mapa" class="wrap section-pad-lg">
-  <div class="feature-panel">
+<section id="dopagem" class="secao-alt secao">
+  <div class="faixa duas-colunas">
     <div>
-      <p class="kicker">04 · Atividade interativa</p>
-      <h2 class="section-title section-title--sm">Mapa corporal das lesões</h2>
-      <p class="lede-sm">Dez regiões clicáveis, com as lesões mais frequentes de cada área, indicador de gravidade e a relação de cada uma com as substâncias dopantes. Funciona no celular e navega por teclado.</p>
-      <ul class="dot-list">
-        <li class="dot-list-item"><span class="dot-list-marker">·</span>Cabeça, ombros, cotovelos, punhos e mãos</li>
-        <li class="dot-list-item"><span class="dot-list-marker">·</span>Tórax, abdômen, quadril e coluna</li>
-        <li class="dot-list-item"><span class="dot-list-marker">·</span>Joelhos, tornozelos e pés</li>
-      </ul>
-      <a href="Páginas/MapaCorporal.html" class="btn btn-primary btn-lg">Abrir a atividade
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-arrow"><path d="M5 12h13M13 6l6 6-6 6" class="icon-stroke"></path></svg>
+      <p class="rotulo-secao"><span class="rotulo-secao-numero">1</span><span class="rotulo-secao-texto">Conceito</span></p>
+      <h2 class="titulo-secao">O que é dopagem</h2>
+      <p class="texto-corpo">Dopagem é o uso de substâncias ou métodos proibidos com a finalidade de aumentar artificialmente o desempenho esportivo. A lista de proibições é revisada anualmente pela Agência Mundial Antidopagem (WADA) e vale para competição e, em vários casos, também fora dela.</p>
+      <p class="texto-corpo">Uma substância entra na lista quando atende a pelo menos dois dos três critérios ao lado. Isso explica por que produtos legais e vendidos em farmácia podem ser proibidos no esporte.</p>
+    </div>
+    <div class="lista-criterios">
+      <div class="criterio">
+        <span class="criterio-marca"><span></span></span>
+        <div>
+          <p class="criterio-titulo">Potencial de melhorar o desempenho</p>
+          <p class="criterio-texto">Há evidência de que a substância ou o método aumenta a capacidade física além do treino.</p>
+        </div>
+      </div>
+      <div class="criterio">
+        <span class="criterio-marca"><span></span></span>
+        <div>
+          <p class="criterio-titulo">Risco à saúde do atleta</p>
+          <p class="criterio-texto">O uso representa perigo real, imediato ou a longo prazo, para quem consome.</p>
+        </div>
+      </div>
+      <div class="criterio">
+        <span class="criterio-marca"><span></span></span>
+        <div>
+          <p class="criterio-titulo">Contraria o espírito esportivo</p>
+          <p class="criterio-texto">Viola valores de ética, jogo limpo, respeito às regras e igualdade de condições.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="substancias" class="secao">
+  <div class="faixa">
+    <p class="rotulo-secao"><span class="rotulo-secao-numero">2</span><span class="rotulo-secao-texto">Classes de substâncias</span></p>
+    <h2 class="titulo-secao">O que se busca e o que o corpo recebe</h2>
+    <p class="intro-secao">Cada classe de substância promete um ganho específico. O preço aparece em tecidos diferentes daqueles que o atleta pretendia melhorar.</p>
+
+    <div class="grade-substancias">
+
+      <article class="ficha">
+        <h3 class="ficha-titulo">Esteroides anabolizantes androgênicos</h3>
+        <div class="ficha-bloco">
+          <p class="ficha-bloco-rotulo">Efeito buscado</p>
+          <p class="ficha-bloco-texto">Aumento acelerado de massa muscular, força e recuperação entre treinos.</p>
+        </div>
+        <div class="ficha-bloco ficha-bloco--risco">
+          <p class="ficha-bloco-rotulo">Risco documentado</p>
+          <p class="ficha-bloco-texto">Tendões e ligamentos não acompanham o ganho de força e rompem. Somam-se hipertrofia do ventrículo esquerdo, hipertensão, alterações hepáticas, acne, alterações de humor e, em adolescentes, fechamento precoce das cartilagens de crescimento.</p>
+        </div>
+        <div class="ficha-regioes">
+          <span class="etiqueta-regiao">Ombros</span><span class="etiqueta-regiao">Joelhos</span><span class="etiqueta-regiao">Tornozelos</span><span class="etiqueta-regiao">Tórax</span><span class="etiqueta-regiao">Fígado</span>
+        </div>
+      </article>
+
+      <article class="ficha">
+        <h3 class="ficha-titulo">EPO e manipulação sanguínea</h3>
+        <div class="ficha-bloco">
+          <p class="ficha-bloco-rotulo">Efeito buscado</p>
+          <p class="ficha-bloco-texto">Mais glóbulos vermelhos, mais oxigênio para o músculo, maior resistência aeróbia.</p>
+        </div>
+        <div class="ficha-bloco ficha-bloco--risco">
+          <p class="ficha-bloco-rotulo">Risco documentado</p>
+          <p class="ficha-bloco-texto">O sangue fica mais viscoso e o coração trabalha contra maior resistência, com risco de trombose, embolia pulmonar, infarto e AVC, sobretudo na desidratação de provas longas.</p>
+        </div>
+        <div class="ficha-regioes">
+          <span class="etiqueta-regiao">Coração</span><span class="etiqueta-regiao">Pulmões</span><span class="etiqueta-regiao">Circulação</span>
+        </div>
+      </article>
+
+      <article class="ficha">
+        <h3 class="ficha-titulo">Estimulantes</h3>
+        <div class="ficha-bloco">
+          <p class="ficha-bloco-rotulo">Efeito buscado</p>
+          <p class="ficha-bloco-texto">Redução da percepção de fadiga, mais atenção, agressividade e velocidade de reação.</p>
+        </div>
+        <div class="ficha-bloco ficha-bloco--risco">
+          <p class="ficha-bloco-rotulo">Risco documentado</p>
+          <p class="ficha-bloco-texto">Taquicardia, arritmias, hipertensão, hipertermia e maior exposição a traumas por comportamento de risco. Casos de morte súbita em esforço estão descritos com anfetaminas e cocaína.</p>
+        </div>
+        <div class="ficha-regioes">
+          <span class="etiqueta-regiao">Coração</span><span class="etiqueta-regiao">Cabeça</span><span class="etiqueta-regiao">Sistema nervoso</span>
+        </div>
+      </article>
+
+      <article class="ficha">
+        <h3 class="ficha-titulo">Hormônio do crescimento e fatores de crescimento</h3>
+        <div class="ficha-bloco">
+          <p class="ficha-bloco-rotulo">Efeito buscado</p>
+          <p class="ficha-bloco-texto">Ganho de massa magra, redução de gordura e promessa de cicatrização mais rápida.</p>
+        </div>
+        <div class="ficha-bloco ficha-bloco--risco">
+          <p class="ficha-bloco-rotulo">Risco documentado</p>
+          <p class="ficha-bloco-texto">Crescimento desproporcional de ossos e cartilagens (acromegalia), síndrome do túnel do carpo, dores articulares, resistência à insulina e aumento do coração.</p>
+        </div>
+        <div class="ficha-regioes">
+          <span class="etiqueta-regiao">Punhos</span><span class="etiqueta-regiao">Mãos</span><span class="etiqueta-regiao">Articulações</span><span class="etiqueta-regiao">Coração</span>
+        </div>
+      </article>
+
+      <article class="ficha">
+        <h3 class="ficha-titulo">Diuréticos e agentes de mascaramento</h3>
+        <div class="ficha-bloco">
+          <p class="ficha-bloco-rotulo">Efeito buscado</p>
+          <p class="ficha-bloco-texto">Perda rápida de peso para categorias e diluição da urina para escapar do exame.</p>
+        </div>
+        <div class="ficha-bloco ficha-bloco--risco">
+          <p class="ficha-bloco-rotulo">Risco documentado</p>
+          <p class="ficha-bloco-texto">Desidratação, queda de pressão, câimbras, perda de potássio e sódio, arritmias e insuficiência renal. A desidratação também reduz a proteção articular e muscular.</p>
+        </div>
+        <div class="ficha-regioes">
+          <span class="etiqueta-regiao">Rins</span><span class="etiqueta-regiao">Músculos</span><span class="etiqueta-regiao">Coração</span>
+        </div>
+      </article>
+
+      <article class="ficha">
+        <h3 class="ficha-titulo">Corticosteroides e analgésicos usados por conta própria</h3>
+        <div class="ficha-bloco">
+          <p class="ficha-bloco-rotulo">Efeito buscado</p>
+          <p class="ficha-bloco-texto">Continuar treinando e competindo apesar da dor e da inflamação.</p>
+        </div>
+        <div class="ficha-bloco ficha-bloco--risco">
+          <p class="ficha-bloco-rotulo">Risco documentado</p>
+          <p class="ficha-bloco-texto">Enfraquecem o colágeno do tendão, retardam a cicatrização, reduzem a densidade óssea e apagam o sinal de alerta que impediria a lesão de progredir.</p>
+        </div>
+        <div class="ficha-regioes">
+          <span class="etiqueta-regiao">Tendões</span><span class="etiqueta-regiao">Coluna</span><span class="etiqueta-regiao">Quadril</span><span class="etiqueta-regiao">Joelhos</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="mecanismo" class="secao-escura secao">
+  <div class="faixa">
+    <p class="rotulo-secao"><span class="rotulo-secao-numero">3</span><span class="rotulo-secao-texto">Mecanismo</span></p>
+    <h2 class="titulo-secao">Como a lesão se instala</h2>
+    <p class="intro-secao">A sequência abaixo é a mesma em quase todos os casos, mude apenas a articulação envolvida.</p>
+
+    <div class="pista">
+      <div class="raia">
+        <p class="raia-numero">1</p>
+        <p class="raia-titulo">Ganho desigual</p>
+        <p class="raia-texto">O músculo hipertrofia rápido. Tendão, ligamento e cartilagem, com pouca vascularização, seguem em outro ritmo.</p>
+      </div>
+      <div class="raia">
+        <p class="raia-numero">2</p>
+        <p class="raia-titulo">Carga acima do limite</p>
+        <p class="raia-texto">Treinos mais pesados e mais frequentes produzem microlesões que não têm tempo de cicatrizar.</p>
+      </div>
+      <div class="raia">
+        <p class="raia-numero">3</p>
+        <p class="raia-titulo">Alarme desligado</p>
+        <p class="raia-texto">Analgésicos, anti-inflamatórios e estimulantes apagam a dor e a fadiga que interromperiam o treino.</p>
+      </div>
+      <div class="raia raia--final">
+        <p class="raia-numero">4</p>
+        <p class="raia-titulo">Falha aguda</p>
+        <p class="raia-texto">Um gesto comum rompe o tendão, o ligamento ou o osso já comprometido. A lesão parece súbita, mas vinha sendo construída.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mapa" class="secao">
+  <div class="faixa">
+    <div class="chamada-mapa moldura-mira">
+      <div>
+        <p class="rotulo-secao"><span class="rotulo-secao-numero">4</span><span class="rotulo-secao-texto">Atividade interativa</span></p>
+        <h2 class="titulo-secao">Mapa corporal das lesões</h2>
+        <p class="texto-corpo texto-corpo--estreito">Dez regiões clicáveis, com as lesões mais frequentes de cada área, indicador de gravidade e a relação de cada uma com as substâncias dopantes. Funciona no celular e navega por teclado.</p>
+        <ul class="lista-topicos">
+          <li>Cabeça, ombros, cotovelos, punhos e mãos</li>
+          <li>Tórax, abdômen, quadril e coluna</li>
+          <li>Joelhos, tornozelos e pés</li>
+        </ul>
+        <a href="paginas/mapa-corporal.html" class="botao botao-cheio">Abrir a atividade
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="icone-seta"><path d="M5 12h13M13 6l6 6-6 6" class="icone-traco"></path></svg>
+        </a>
+      </div>
+
+      <a href="paginas/mapa-corporal.html" aria-label="Abrir o mapa corporal interativo" class="previa-figura-link">
+        <div class="previa-figura">
+          <img src="imagens/silhueta-corpo.svg" alt="Ilustração de uma pessoa em pé, de frente, prévia do mapa corporal interativo.">
+        </div>
+        <p class="previa-legenda">Joelhos · LCA, menisco, condromalácia</p>
       </a>
     </div>
-
-    <a href="Páginas/MapaCorporal.html" aria-label="Abrir o mapa corporal interativo" class="mapa-figure-link">
-      <div class="figure-preview">
-        <img src="assets/corpo-base.png" alt="Silhueta de um homem em pé, prévia do mapa corporal interativo.">
-      </div>
-      <p class="figure-caption">Joelhos · LCA, menisco, condromalácia</p>
-    </a>
   </div>
 </section>
 
-<section class="section-alt">
-  <div class="wrap section-pad two-col">
+<section class="secao-alt secao">
+  <div class="faixa duas-colunas">
     <div>
-      <p class="kicker">05 · Prevenção</p>
-      <h2 class="section-title section-title--sm">O caminho sem atalho</h2>
-      <p class="lede-plain">A maior parte das lesões de sobrecarga é previsível e, portanto, evitável. As medidas abaixo valem tanto para o atleta de rendimento quanto para quem treina na escola ou na academia.</p>
-      <div class="check-list">
-        <div class="check-item"><span class="check-icon">✓</span><p class="check-text">Progressão gradual de carga e volume, com semanas de menor intensidade.</p></div>
-        <div class="check-item"><span class="check-icon">✓</span><p class="check-text">Aquecimento específico, trabalho de força excêntrica e treino de estabilidade.</p></div>
-        <div class="check-item"><span class="check-icon">✓</span><p class="check-text">Sono e alimentação adequados: é durante a recuperação que o tecido se refaz.</p></div>
-        <div class="check-item"><span class="check-icon">✓</span><p class="check-text">Técnica corrigida por profissional e equipamento adequado à modalidade.</p></div>
-        <div class="check-item"><span class="check-icon">✓</span><p class="check-text">Qualquer suplemento ou medicamento conferido junto a médico e à lista da WADA.</p></div>
+      <p class="rotulo-secao"><span class="rotulo-secao-numero">5</span><span class="rotulo-secao-texto">Prevenção</span></p>
+      <h2 class="titulo-secao">O caminho sem atalho</h2>
+      <p class="intro-secao">A maior parte das lesões de sobrecarga é previsível e, portanto, evitável. As medidas abaixo valem tanto para o atleta de rendimento quanto para quem treina na escola ou na academia.</p>
+      <div class="lista-medidas">
+        <div class="medida"><span class="medida-marca">✓</span><p class="medida-texto">Progressão gradual de carga e volume, com semanas de menor intensidade.</p></div>
+        <div class="medida"><span class="medida-marca">✓</span><p class="medida-texto">Aquecimento específico, trabalho de força excêntrica e treino de estabilidade.</p></div>
+        <div class="medida"><span class="medida-marca">✓</span><p class="medida-texto">Sono e alimentação adequados: é durante a recuperação que o tecido se refaz.</p></div>
+        <div class="medida"><span class="medida-marca">✓</span><p class="medida-texto">Técnica corrigida por profissional e equipamento adequado à modalidade.</p></div>
+        <div class="medida"><span class="medida-marca">✓</span><p class="medida-texto">Qualquer suplemento ou medicamento conferido junto a médico e à lista da WADA.</p></div>
       </div>
     </div>
 
-    <div class="alert-card">
-      <div class="alert-header">
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="alert-icon"><path d="M12 3 22 20H2Z" class="alert-icon-outline"></path><path d="M12 9v5" class="alert-icon-stem"></path><circle cx="12" cy="17" r="1.1" class="alert-icon-dot"></circle></svg>
-        <p class="alert-label">Sinais para interromper e procurar ajuda</p>
+    <div class="cartao-vermelho">
+      <div class="cartao-vermelho-cabecalho">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="cartao-vermelho-icone"><path d="M12 3 22 20H2Z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"></path><path d="M12 9v5" stroke="#fff" stroke-width="2" stroke-linecap="round"></path><circle cx="12" cy="17" r="1.1" fill="#fff"></circle></svg>
+        <p class="cartao-vermelho-rotulo">Sinais para interromper e procurar ajuda</p>
       </div>
-      <ul class="alert-list">
+      <ul class="lista-alerta">
         <li>Estalido audível no momento do gesto, seguido de perda de função.</li>
         <li>Inchaço que aparece em minutos ou incapacidade de apoiar o peso.</li>
         <li>Dor no peito, palpitação, tontura ou desmaio durante o esforço.</li>
@@ -272,27 +281,29 @@
   </div>
 </section>
 
-<footer class="wrap footer-pad">
-  <div class="footer-grid">
-    <div>
-      <p class="footer-brand">Corpo, Esporte &amp; Dopagem</p>
-      <p class="footer-text">Material de apoio para aulas de Educação Física sobre saúde do atleta, ética esportiva e prevenção de lesões.</p>
-    </div>
-    <div>
-      <p class="footer-heading">Nesta página</p>
-      <div class="footer-links">
-        <a href="#dopagem" class="nav-link">O que é dopagem</a>
-        <a href="#substancias" class="nav-link">Classes de substâncias</a>
-        <a href="#mecanismo" class="nav-link">Como a lesão se instala</a>
-        <a href="Páginas/MapaCorporal.html" class="nav-link">Mapa corporal interativo</a>
+<footer class="rodape">
+  <div class="faixa">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca">Corpo, Esporte &amp; Dopagem</p>
+        <p class="rodape-texto">Material de apoio para aulas de Educação Física sobre saúde do atleta, ética esportiva e prevenção de lesões.</p>
+      </div>
+      <div>
+        <p class="rodape-titulo">Nesta página</p>
+        <div class="rodape-links">
+          <a href="#dopagem" class="menu-link">O que é dopagem</a>
+          <a href="#substancias" class="menu-link">Classes de substâncias</a>
+          <a href="#mecanismo" class="menu-link">Como a lesão se instala</a>
+          <a href="paginas/mapa-corporal.html" class="menu-link">Mapa corporal interativo</a>
+        </div>
+      </div>
+      <div>
+        <p class="rodape-titulo">Referências gerais</p>
+        <p class="rodape-refs">Agência Mundial Antidopagem (WADA), Autoridade Brasileira de Controle de Dopagem (ABCD), Sociedade Brasileira de Medicina do Exercício e do Esporte e Comitê Olímpico do Brasil.</p>
       </div>
     </div>
-    <div>
-      <p class="footer-heading">Referências gerais</p>
-      <p class="footer-refs">Agência Mundial Antidopagem (WADA) · Autoridade Brasileira de Controle de Dopagem (ABCD) · Sociedade Brasileira de Medicina do Exercício e do Esporte · Comitê Olímpico do Brasil</p>
-    </div>
+    <p class="rodape-aviso">Conteúdo com finalidade educacional. Não substitui avaliação, diagnóstico ou orientação de profissionais de saúde. Em caso de dor, trauma ou suspeita de lesão, procure atendimento médico. O uso de substâncias dopantes é proibido pelo Código Mundial Antidopagem e representa risco real à saúde.</p>
   </div>
-  <p class="footer-disclaimer">Conteúdo com finalidade educacional. Não substitui avaliação, diagnóstico ou orientação de profissionais de saúde. Em caso de dor, trauma ou suspeita de lesão, procure atendimento médico. O uso de substâncias dopantes é proibido pelo Código Mundial Antidopagem e representa risco real à saúde.</p>
 </footer>
 
 </body>
