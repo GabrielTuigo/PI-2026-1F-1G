@@ -3,7 +3,7 @@ var regioes = [
     id: "cabeca",
     nome: "Cabeça",
     gravidade: "alta",
-    pontos: [{ top: 11, left: 50 }],
+    pontos: [{ top: 10, left: 50 }],
     lesoes: [
       "Concussão e outros traumas cranianos",
       "Cefaleia associada à hipertensão",
@@ -15,7 +15,7 @@ var regioes = [
     id: "ombros",
     nome: "Ombros",
     gravidade: "alta",
-    pontos: [{ top: 25, left: 28 }, { top: 25, left: 72 }],
+    pontos: [{ top: 24, left: 26 }, { top: 24, left: 74 }],
     lesoes: [
       "Tendinite do manguito rotador",
       "Luxação do ombro",
@@ -27,7 +27,7 @@ var regioes = [
     id: "cotovelos",
     nome: "Cotovelos",
     gravidade: "media",
-    pontos: [{ top: 47, left: 20 }, { top: 47, left: 80 }],
+    pontos: [{ top: 35, left: 25 }, { top: 35, left: 75 }],
     lesoes: [
       "Epicondilite lateral (cotovelo de tenista)",
       "Epicondilite medial (cotovelo de golfista)",
@@ -39,7 +39,7 @@ var regioes = [
     id: "punhos-maos",
     nome: "Punhos e mãos",
     gravidade: "media",
-    pontos: [{ top: 64, left: 20 }, { top: 64, left: 80 }],
+    pontos: [{ top: 55, left: 20 }, { top: 55, left: 80 }],
     lesoes: [
       "Síndrome do túnel do carpo",
       "Tendinite dos flexores e extensores",
@@ -51,7 +51,7 @@ var regioes = [
     id: "torax",
     nome: "Tórax",
     gravidade: "alta",
-    pontos: [{ top: 35, left: 50 }],
+    pontos: [{ top: 30, left: 50 }],
     lesoes: [
       "Ginecomastia (crescimento das mamas)",
       "Hipertrofia do ventrículo esquerdo",
@@ -63,7 +63,7 @@ var regioes = [
     id: "abdomen",
     nome: "Abdômen",
     gravidade: "alta",
-    pontos: [{ top: 47, left: 50 }],
+    pontos: [{ top: 43, left: 50 }],
     lesoes: [
       "Alterações e lesões hepáticas",
       "Hérnias por esforço",
@@ -87,7 +87,7 @@ var regioes = [
     id: "coluna",
     nome: "Coluna",
     gravidade: "alta",
-    pontos: [{ top: 43, left: 56 }],
+    pontos: [{ top: 38, left: 55 }],
     lesoes: [
       "Hérnia de disco",
       "Espondilólise",
@@ -99,7 +99,7 @@ var regioes = [
     id: "joelhos",
     nome: "Joelhos",
     gravidade: "alta",
-    pontos: [{ top: 78, left: 40 }, { top: 78, left: 60 }],
+    pontos: [{ top: 68, left: 37 }, { top: 68, left: 63 }],
     lesoes: [
       "Lesão do ligamento cruzado anterior (LCA)",
       "Lesão de menisco",
@@ -111,7 +111,7 @@ var regioes = [
     id: "tornozelos-pes",
     nome: "Tornozelos e pés",
     gravidade: "media",
-    pontos: [{ top: 94, left: 39 }, { top: 94, left: 61 }],
+    pontos: [{ top: 90, left: 37 }, { top: 90, left: 63 }],
     lesoes: [
       "Entorse de tornozelo",
       "Tendinite do calcâneo (Aquiles)",
