@@ -3,7 +3,7 @@ var regioes = [
     id: "cabeca",
     nome: "Cabeça",
     gravidade: "alta",
-    pontos: [{ top: 7.5, left: 54.5 }],
+    pontos: [{ top: 11, left: 50 }],
     lesoes: [
       "Concussão e outros traumas cranianos",
       "Cefaleia associada à hipertensão",
@@ -15,7 +15,7 @@ var regioes = [
     id: "ombros",
     nome: "Ombros",
     gravidade: "alta",
-    pontos: [{ top: 20, left: 38 }, { top: 19.5, left: 69 }],
+    pontos: [{ top: 25, left: 28 }, { top: 25, left: 72 }],
     lesoes: [
       "Tendinite do manguito rotador",
       "Luxação do ombro",
@@ -27,7 +27,7 @@ var regioes = [
     id: "cotovelos",
     nome: "Cotovelos",
     gravidade: "media",
-    pontos: [{ top: 40.5, left: 30 }, { top: 39.5, left: 76 }],
+    pontos: [{ top: 47, left: 20 }, { top: 47, left: 80 }],
     lesoes: [
       "Epicondilite lateral (cotovelo de tenista)",
       "Epicondilite medial (cotovelo de golfista)",
@@ -39,7 +39,7 @@ var regioes = [
     id: "punhos-maos",
     nome: "Punhos e mãos",
     gravidade: "media",
-    pontos: [{ top: 53.5, left: 29.5 }, { top: 52, left: 78 }],
+    pontos: [{ top: 64, left: 20 }, { top: 64, left: 80 }],
     lesoes: [
       "Síndrome do túnel do carpo",
       "Tendinite dos flexores e extensores",
@@ -51,7 +51,7 @@ var regioes = [
     id: "torax",
     nome: "Tórax",
     gravidade: "alta",
-    pontos: [{ top: 25, left: 54 }],
+    pontos: [{ top: 35, left: 50 }],
     lesoes: [
       "Ginecomastia (crescimento das mamas)",
       "Hipertrofia do ventrículo esquerdo",
@@ -63,7 +63,7 @@ var regioes = [
     id: "abdomen",
     nome: "Abdômen",
     gravidade: "alta",
-    pontos: [{ top: 35.5, left: 53 }],
+    pontos: [{ top: 47, left: 50 }],
     lesoes: [
       "Alterações e lesões hepáticas",
       "Hérnias por esforço",
@@ -75,7 +75,7 @@ var regioes = [
     id: "quadril",
     nome: "Quadril",
     gravidade: "media",
-    pontos: [{ top: 44, left: 52 }],
+    pontos: [{ top: 57, left: 50 }],
     lesoes: [
       "Tendinite do psoas",
       "Bursite trocantérica",
@@ -87,7 +87,7 @@ var regioes = [
     id: "coluna",
     nome: "Coluna",
     gravidade: "alta",
-    pontos: [{ top: 42, left: 64 }],
+    pontos: [{ top: 43, left: 56 }],
     lesoes: [
       "Hérnia de disco",
       "Espondilólise",
@@ -99,7 +99,7 @@ var regioes = [
     id: "joelhos",
     nome: "Joelhos",
     gravidade: "alta",
-    pontos: [{ top: 80, left: 45 }, { top: 78.5, left: 63 }],
+    pontos: [{ top: 78, left: 40 }, { top: 78, left: 60 }],
     lesoes: [
       "Lesão do ligamento cruzado anterior (LCA)",
       "Lesão de menisco",
@@ -111,7 +111,7 @@ var regioes = [
     id: "tornozelos-pes",
     nome: "Tornozelos e pés",
     gravidade: "media",
-    pontos: [{ top: 93.5, left: 42.5 }, { top: 92, left: 65 }],
+    pontos: [{ top: 94, left: 39 }, { top: 94, left: 61 }],
     lesoes: [
       "Entorse de tornozelo",
       "Tendinite do calcâneo (Aquiles)",
@@ -121,55 +121,55 @@ var regioes = [
   }
 ];
 
-var badgeLabel = { alta: "Gravidade alta", media: "Gravidade média", baixa: "Gravidade baixa" };
+var rotuloSelo = { alta: "Gravidade alta", media: "Gravidade média", baixa: "Gravidade baixa" };
 
-var figureWrap = document.getElementById('figureWrap');
-var regionList = document.getElementById('regionList');
-var infoEmpty = document.getElementById('infoEmpty');
-var infoContent = document.getElementById('infoContent');
-var infoTitle = document.getElementById('infoTitle');
-var infoBadge = document.getElementById('infoBadge');
+var figuraCorpo = document.getElementById('figuraCorpo');
+var listaRegioes = document.getElementById('listaRegioes');
+var infoVazio = document.getElementById('infoVazio');
+var infoConteudo = document.getElementById('infoConteudo');
+var infoTitulo = document.getElementById('infoTitulo');
+var infoSelo = document.getElementById('infoSelo');
 var infoLesoes = document.getElementById('infoLesoes');
 var infoRelacao = document.getElementById('infoRelacao');
 
 regioes.forEach(function (regiao) {
   regiao.pontos.forEach(function (ponto) {
-    var dot = document.createElement('button');
-    dot.type = 'button';
-    dot.className = 'hotspot';
-    dot.style.top = ponto.top + '%';
-    dot.style.left = ponto.left + '%';
-    dot.dataset.region = regiao.id;
-    dot.setAttribute('aria-label', 'Ver lesões: ' + regiao.nome);
-    dot.addEventListener('click', function () { selecionar(regiao.id); });
-    figureWrap.appendChild(dot);
+    var ponto_el = document.createElement('button');
+    ponto_el.type = 'button';
+    ponto_el.className = 'ponto-interativo';
+    ponto_el.style.top = ponto.top + '%';
+    ponto_el.style.left = ponto.left + '%';
+    ponto_el.dataset.regiao = regiao.id;
+    ponto_el.setAttribute('aria-label', 'Ver lesões: ' + regiao.nome);
+    ponto_el.addEventListener('click', function () { selecionar(regiao.id); });
+    figuraCorpo.appendChild(ponto_el);
   });
 
   var item = document.createElement('button');
   item.type = 'button';
-  item.className = 'region-btn';
-  item.dataset.region = regiao.id;
-  item.innerHTML = '<span class="dot"></span>' + regiao.nome;
+  item.className = 'regiao-botao';
+  item.dataset.regiao = regiao.id;
+  item.innerHTML = '<span class="ponto"></span>' + regiao.nome;
   item.addEventListener('click', function () { selecionar(regiao.id); });
-  regionList.appendChild(item);
+  listaRegioes.appendChild(item);
 });
 
 function selecionar(id) {
   var regiao = regioes.filter(function (r) { return r.id === id; })[0];
   if (!regiao) return;
 
-  document.querySelectorAll('.hotspot').forEach(function (el) {
-    el.classList.toggle('active', el.dataset.region === id);
+  document.querySelectorAll('.ponto-interativo').forEach(function (el) {
+    el.classList.toggle('ativo', el.dataset.regiao === id);
   });
-  document.querySelectorAll('.region-btn').forEach(function (el) {
-    el.classList.toggle('active', el.dataset.region === id);
+  document.querySelectorAll('.regiao-botao').forEach(function (el) {
+    el.classList.toggle('ativo', el.dataset.regiao === id);
   });
 
-  infoEmpty.classList.add('is-hidden');
-  infoContent.classList.remove('is-hidden');
-  infoTitle.textContent = regiao.nome;
-  infoBadge.className = 'badge badge-' + regiao.gravidade;
-  infoBadge.innerHTML = '<span class="dot"></span>' + badgeLabel[regiao.gravidade];
+  infoVazio.classList.add('oculto');
+  infoConteudo.classList.remove('oculto');
+  infoTitulo.textContent = regiao.nome;
+  infoSelo.className = 'selo selo-' + regiao.gravidade;
+  infoSelo.innerHTML = '<span class="selo-cartao"></span>' + rotuloSelo[regiao.gravidade];
   infoLesoes.innerHTML = regiao.lesoes.map(function (l) { return '<li>' + l + '</li>'; }).join('');
   infoRelacao.textContent = regiao.relacao;
 }
