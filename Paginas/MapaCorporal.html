@@ -7,76 +7,75 @@
 <meta name="description" content="Mapa corporal interativo: clique nas regiões do corpo para ver as lesões mais frequentes e sua relação com a dopagem.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
 
-<nav class="site-nav">
-  <div class="wrap nav-bar">
-    <a href="../index.html" class="nav-link brand-link">
-      <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-back"><path d="M19 12H6M12 5l-7 7 7 7" class="icon-stroke"></path></svg>
+<header class="cabecalho">
+  <div class="faixa cabecalho-barra">
+    <a href="../index.html" class="marca">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="icone-voltar"><path d="M19 12H6M12 5l-7 7 7 7" class="icone-traco"></path></svg>
       Corpo, Esporte &amp; Dopagem
     </a>
-    <span class="nav-meta">Atividade interativa · Mapa corporal</span>
+    <span class="legenda-pagina">Atividade interativa · Mapa corporal</span>
   </div>
-</nav>
-
-<header class="wrap page-header">
-  <p class="kicker">04 · Atividade interativa</p>
-  <h1 class="page-title">Mapa corporal das lesões</h1>
-  <p class="page-lead">Clique nos pontos sobre o corpo — ou nos nomes na lista — para ver as lesões mais frequentes de cada região, a gravidade e a relação com o uso de substâncias dopantes. Também funciona pelo teclado, usando Tab e Enter.</p>
 </header>
 
-<section class="wrap content-pad">
-  <div class="map-grid">
+<header class="faixa cabecalho-pagina">
+  <p class="rotulo-secao"><span class="rotulo-secao-numero">4</span><span class="rotulo-secao-texto">Atividade interativa</span></p>
+  <h1 class="titulo-pagina">Mapa corporal das lesões</h1>
+  <p class="texto-pagina">Clique nos pontos sobre o corpo — ou nos nomes na lista — para ver as lesões mais frequentes de cada região, a gravidade e a relação com o uso de substâncias dopantes. Também funciona pelo teclado, usando Tab e Enter.</p>
+</header>
 
-    <div class="map-card">
-      <div class="figure-wrap" id="figureWrap">
-        <img src="../Imagens/corpo-base.png" alt="Silhueta de um homem em pé, de frente, usado como base do mapa corporal interativo.">
+<section class="faixa area-mapa">
+  <div class="grade-mapa">
+
+    <div class="painel-figura moldura-mira">
+      <div class="figura-corpo" id="figuraCorpo">
+        <img class="figura-corpo-imagem" src="../imagens/humano-mapa.png" alt="Ilustração de um homem em pé, de frente, usada como base do mapa corporal interativo.">
       </div>
-      <p class="map-card-caption">Dez regiões clicáveis · toque ou use o teclado</p>
+      <p class="painel-figura-legenda">Dez regiões clicáveis · toque ou use o teclado</p>
     </div>
 
-    <div class="info-stack">
+    <div class="pilha-lateral">
 
-      <div id="infoPanel" aria-live="polite" class="info-panel">
-        <div id="infoEmpty">
-          <p class="info-panel-kicker">Selecione uma região</p>
-          <p class="info-panel-empty-text">Clique em um ponto laranja sobre o corpo, ou escolha um item na lista ao lado, para ver as lesões mais comuns daquela região, o nível de gravidade e como ela se relaciona com a dopagem.</p>
+      <div id="painelInfo" aria-live="polite" class="painel-info">
+        <div id="infoVazio">
+          <p class="painel-info-rotulo">Selecione uma região</p>
+          <p class="painel-info-texto-vazio">Clique em um ponto sobre o corpo, ou escolha um item na lista ao lado, para ver as lesões mais comuns daquela região, o nível de gravidade e como ela se relaciona com a dopagem.</p>
         </div>
-        <div id="infoContent" class="is-hidden">
-          <p id="infoEyebrow" class="info-panel-kicker">Região selecionada</p>
-          <div class="info-title-row">
-            <h2 id="infoTitle" class="info-title"></h2>
-            <span id="infoBadge" class="badge"></span>
+        <div id="infoConteudo" class="oculto">
+          <p id="infoChamada" class="painel-info-rotulo">Região selecionada</p>
+          <div class="info-cabecalho">
+            <h2 id="infoTitulo" class="info-titulo"></h2>
+            <span id="infoSelo" class="selo"></span>
           </div>
-          <div class="info-block">
-            <p class="info-block-label">Lesões mais frequentes</p>
-            <ul id="infoLesoes" class="info-lesoes-list"></ul>
+          <div class="info-bloco">
+            <p class="info-bloco-rotulo">Lesões mais frequentes</p>
+            <ul id="infoLesoes" class="lista-lesoes"></ul>
           </div>
-          <div class="info-divider"></div>
+          <div class="info-linha"></div>
           <div>
-            <p class="info-block-label">Relação com a dopagem</p>
-            <p id="infoRelacao" class="info-relacao-text"></p>
+            <p class="info-bloco-rotulo">Relação com a dopagem</p>
+            <p id="infoRelacao" class="info-relacao"></p>
           </div>
         </div>
       </div>
 
       <div>
-        <p class="kicker">Todas as regiões</p>
-        <div id="regionList" class="region-list"></div>
+        <p class="lista-regioes-titulo">Todas as regiões</p>
+        <div id="listaRegioes" class="lista-regioes"></div>
       </div>
 
     </div>
   </div>
 </section>
 
-<footer class="wrap footer-pad-simple">
-  <p class="page-disclaimer">Conteúdo com finalidade educacional. Não substitui avaliação, diagnóstico ou orientação de profissionais de saúde.</p>
+<footer class="faixa rodape-simples">
+  <p class="aviso-simples">Conteúdo com finalidade educacional. Não substitui avaliação, diagnóstico ou orientação de profissionais de saúde.</p>
 </footer>
 
-<script src="../JS/script.js"></script>
+<script src="../js/mapa-corporal.js"></script>
 
 </body>
 </html>
