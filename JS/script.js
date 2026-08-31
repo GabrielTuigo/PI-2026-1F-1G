@@ -75,7 +75,7 @@ var regioes = [
     id: "quadril",
     nome: "Quadril",
     gravidade: "media",
-    pontos: [{ top: 57, left: 50 }],
+    pontos: [{ top: 64, left: 50 }],
     lesoes: [
       "Tendinite do psoas",
       "Bursite trocantérica",
